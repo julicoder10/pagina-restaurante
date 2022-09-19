@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .5s all ease-in-out;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width:.8rem;
+    }
+    
+    &::-webkit-scrollbar-track{
+        background:#111;
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        background:#a99a83;
+        border-radius:5rem;
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+@media screen and (min-width:991px) {
+
+    html {
+        scroll-snap-type: y proximity;
+    }
+
+    section {
+        scroll-snap-align: start;
+    }
+}

@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding:4rem 1rem;
+    background-color: #111;
+
+    .icon{
+        color:#a99a83;
+        font-size: 5rem;
+    }
+
+    span{
+        color:#fff;
+        font-size: 1.4rem;
+    }
+
+    div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+
+        span{
+            color:#fff;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #a99a83;
+            cursor:pointer;
+            text-transform: uppercase;
+            letter-spacing:2px;
+        }
+    }
+}

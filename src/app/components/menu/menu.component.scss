@@ -1,0 +1,114 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem;
+    background-color: rgba(0,0,0,.9);
+    height: 100vh;
+
+    h2 {
+        font-size: 3.5rem;
+        color: #fff;
+        letter-spacing: 3px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    button {
+        color: #fff;
+        border:1.5px solid #fff;
+        padding: 1rem 2.5rem;
+        text-transform: capitalize;
+        background: transparent;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: 400;
+        background-color: transparent;
+        font-size: 1.2rem;
+        width: 15rem;
+    }
+
+    .container {
+        display: flex;
+        gap: 5rem;
+
+        .left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .icon {
+            font-size: 4rem;
+            color: #fff;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.food {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    position: relative;
+
+    span {
+        font-size: 1.5rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.4rem;
+        color: #ddd;
+        font-weight: lighter;
+        width: 90%;
+    }
+
+    .price {
+        color: #ddd;
+        font-size: 1.8rem;
+        font-weight: lighter;
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    section {
+        height: auto;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+
+        .container {
+            flex-direction: column;
+
+            .left,
+            .right {
+                font-size: 70%;
+                width: 100%;
+            }
+        }
+    }
+}
