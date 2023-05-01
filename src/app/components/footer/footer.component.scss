@@ -5,16 +5,16 @@ footer{
     align-items: center;
     gap:2rem;
     padding:4rem 1rem;
-    background-color: #111;
+    background-color: rgba(0,0,0,.9);
 
     .icon{
-        color:#a99a83;
+        color:#bd965b;
         font-size: 5rem;
     }
 
     span{
         color:#fff;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     div{
@@ -24,9 +24,9 @@ footer{
         gap:2rem;
 
         span{
-            color:#fff;
+            color:#bd965b;
             padding-bottom: 1rem;
-            border-bottom: 2px solid #a99a83;
+            border-bottom: 2px solid #bd965b;
             cursor:pointer;
             text-transform: uppercase;
             letter-spacing:2px;

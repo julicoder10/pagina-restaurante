@@ -1,19 +1,19 @@
 header{
     display:flex;
-    flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap:1rem;
     position:absolute;
-    padding:1.5rem 6rem;
-    background-color: rgba(0,0,0,.6);
+    padding:1rem 6rem;
     top:0;
     left:0; right:0;
     z-index:10;
+    border-bottom: .5px solid #a99a83;
+    background-color: rgba(0,0,0, .4);
 
-    span{
-        font-size:1.2rem;
-        color:#fff;
+    .icon {
+        color: #a99a83;
+        font-size: 2rem;
     }
 
     nav{
@@ -22,10 +22,10 @@ header{
         gap:3rem;
         
         a{
-            text-transform: capitalize;
-            font-weight: 500;
+            text-transform: uppercase;
+            font-weight: bold;
             font-size: 1.2rem;
-            color:#ddd;
+            color:#fff;
             padding-bottom:.5rem;
             transition:.3s all ease-in-out;
 
@@ -33,6 +33,19 @@ header{
                 opacity:70%;
             }
         }
+    }
+
+    button {
+        color: #000;
+        padding: 1.5rem 2.5rem;
+        text-transform: capitalize;
+        background: transparent;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-weight: 400;
+        background-color: #bd965b;
+        font-size: 1.3rem;
+        width: 15rem;
     }
 }
 

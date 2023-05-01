@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  faUtensils = faUtensils
   constructor() { }
 
   ngOnInit(): void {
